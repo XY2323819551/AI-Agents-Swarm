@@ -13,6 +13,12 @@ client = OpenAI()
 
 from utils.function_to_schema import function_to_schema
 
+class Agent(BaseModel):
+    name: str = "Agent"
+    model: str = "gpt-4o-mini"
+    instructions: str = "You are a helpful Agent"
+    tools: list = []
+
 def execute_refund(item_name):
     return "success"
 

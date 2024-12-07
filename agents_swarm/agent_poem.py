@@ -14,7 +14,7 @@ from utils.agent_logger import AgentLogger
 
 class Agent(BaseModel):
     name: str = "Agent"
-    model: str = "llama3-70b-8192"  # deepseek-chat, mixtral-8x7b-32768, Qwen/Qwen2-72B-Instruct, gpt-4o, llama3-70b-8192
+    model: str = "gpt-4o"  # deepseek-chat, mixtral-8x7b-32768, Qwen/Qwen2-72B-Instruct, gpt-4o, llama3-70b-8192
     instructions: str = "你是一个非常有用的人工智能助手，你使用中文回答用户的问题。"
     tools: list = []
 
@@ -198,7 +198,6 @@ print("我是一个可以根据地点写诗的小助手，你可以说：我在�
 while True:
     user = input("user: ")
     if user in ["ok", "q", "exit", "好的", "好的谢谢"]:
-        breakpoint()
         # 在对话结束时保存日志
         log_file = logger.save_log()
         print(f"日志已保存到: {log_file}")

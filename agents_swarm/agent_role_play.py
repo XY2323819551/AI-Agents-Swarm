@@ -53,7 +53,7 @@ from tool_pool.arxiv_pdf import get_arxiv_pdf_content  # 根据download—url获
 
 class Agent(BaseModel):
     name: str = "Agent"
-    model: str = "codellama/CodeLlama-34b-Python-hf"  # deepseek-chat, mixtral-8x7b-32768, Qwen/Qwen2-72B-Instruct, gpt-4o, llama3-70b-8192
+    model: str = "gpt-4o"  # deepseek-chat, mixtral-8x7b-32768, Qwen/Qwen2-72B-Instruct, gpt-4o, llama3-70b-8192
     instructions: str = "你是一个非常有用的人工智能助手，你使用中文回答用户的问题。"
     tools: list = []
 

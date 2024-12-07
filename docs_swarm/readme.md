@@ -9,7 +9,5 @@
   - "mixtral-8x7b-32768"（groq sdk）
   - "Qwen/Qwen2-72B-Instruct"（together sdk）
 
-7. poc_swarm_stage7: swarm框架相对于stage6都有哪些新东西？
-8. poc_swarm_stage8: 使用中文进行测试
-9. poc_swarm_stage9: 基于8进行multi_agent的demo
-10. 
+7. poc_swarm_stage8: 使用中文进行测试
+8. poc_swarm_stage9: 基于8进行multi_agent的demo

@@ -20,7 +20,6 @@ class Response(BaseModel):
     messages: list
 
 
-
 def execute_order(product, price: int):
     """价格应该是人民币."""
     print("\n\n=== 订单详情 ===")

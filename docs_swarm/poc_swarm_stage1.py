@@ -4,16 +4,16 @@ from pydantic import BaseModel
 from typing import Optional
 
 """
-core indea: a set of steps and the tools to execute them
+core idea: a set of steps and the tools to execute them
 """
 
 client = OpenAI()
 
 # Customer Service Routine
 # --------------------------------------------stage 1----------------------------------------------------
-# The main power of routines is their simplicity and robustness. 
-# Notice that these instructions contain conditionals much like a state machine or branching in code. 
-# LLMs can actually handle these cases quite robustly for small and medium sized routine, with the added benefit of having "soft" adherance – the LLM can naturally steer the conversation without getting stuck in dead-ends.
+# 例程的主要优势在于其简单性和鲁棒性。
+# 注意，这些指令包含条件判断，很像状态机或代码中的分支。
+# LLM实际上可以很好地处理小型和中型例程中的这些情况，还有一个额外的好处是具有"软"遵从性 - LLM可以自然地引导对话而不会陷入死胡同。
 system_message = (
     "You are a customer support agent for ACME Inc."
     "Always answer in a sentence or less."
